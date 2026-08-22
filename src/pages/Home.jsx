@@ -123,7 +123,7 @@ export default function Home() {
       {/* About strip */}
       <section
         id="about"
-        className="max-w-5xl mx-auto px-5 lg:px-8 py-20 grid md:grid-cols-2 gap-10 items-center"
+        className="scroll-mt-16 max-w-5xl mx-auto px-5 lg:px-8 py-20 grid md:grid-cols-2 gap-10 items-center"
       >
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -160,7 +160,10 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section id="services" className="max-w-6xl mx-auto px-5 lg:px-8 py-16">
+      <section
+        id="services"
+        className="scroll-mt-16 max-w-6xl mx-auto px-5 lg:px-8 py-16"
+      >
         <div className="text-center mb-12">
           <p className="text-xs font-mono uppercase tracking-[0.14em] text-rose-600 mb-3">
             The rituals
@@ -197,7 +200,10 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="bg-plum-800/[0.04] py-20 lg:py-28">
+      <section
+        id="testimonials"
+        className="scroll-mt-16 bg-plum-800/[0.04] py-20 lg:py-28"
+      >
         <div className="max-w-5xl mx-auto px-5 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

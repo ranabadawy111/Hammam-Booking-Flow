@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer id="visit" className="bg-plum-900 text-ivory">
+    <footer id="visit" className="scroll-mt-16 bg-plum-900 text-ivory">
       <div className="max-w-6xl mx-auto px-5 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <p className="font-display italic text-2xl mb-3">Hammam Zahra</p>
@@ -48,7 +48,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-ivory/10 py-5 text-center text-xs text-ivory/35">
-        © {new Date().getFullYear()} Hammam Zahra. A fictional studio built for portfolio purposes.
+        © {new Date().getFullYear()} Hammam Zahra. A fictional studio built for
+        portfolio purposes.
       </div>
     </footer>
   );
