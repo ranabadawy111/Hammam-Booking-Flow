@@ -195,18 +195,20 @@ export default function Navbar() {
 
   const handleLogoClick = (e) => {
     setOpen(false);
+    setActiveSection("");
 
     if (location.pathname === "/") {
       e.preventDefault();
 
-      setActiveSection("");
+      window.history.replaceState(null, "", "/");
 
       window.scrollTo({
         top: 0,
+        left: 0,
         behavior: "smooth",
       });
 
-      window.history.replaceState(null, "", "/");
+      return;
     }
   };
 
