@@ -44,6 +44,7 @@ const cardAnimation = {
     },
   },
 };
+
 export default function Home() {
   const {
     data: services,
@@ -56,8 +57,11 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-plum-900 text-ivory pt-32 pb-28 lg:pt-44 lg:pb-40">
+      {/* Hero with ID for scroll targets */}
+      <section
+        id="hero"
+        className="relative overflow-hidden bg-plum-900 text-ivory pt-32 pb-28 lg:pt-44 lg:pb-40"
+      >
         <div
           className="absolute inset-0 opacity-[0.07]"
           style={{
@@ -66,7 +70,6 @@ export default function Home() {
             backgroundSize: "48px 48px",
           }}
         />
-        {/* Decorative arch */}
         <div
           className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-[520px] h-[520px] bg-plum-800/60 border border-ivory/[0.06]"
           style={{ borderRadius: "50% 50% 0 0 / 60% 60% 0 0" }}
@@ -193,7 +196,7 @@ export default function Home() {
         )}
       </section>
 
-      {/* ================= TESTIMONIALS ================= */}
+      {/* Testimonials */}
       <section id="testimonials" className="bg-plum-800/[0.04] py-20 lg:py-28">
         <div className="max-w-5xl mx-auto px-5 lg:px-8">
           <motion.div

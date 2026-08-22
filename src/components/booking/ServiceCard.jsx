@@ -3,11 +3,7 @@ import { ArrowRight, Clock } from "lucide-react";
 
 import ArchFrame from "../ui/ArchFrame";
 
-export default function ServiceCard({
-  service,
-  onSelect,
-  selected,
-}) {
+export default function ServiceCard({ service, onSelect, selected }) {
   return (
     <motion.button
       type="button"
@@ -33,18 +29,14 @@ export default function ServiceCard({
       {/* Hover glow */}
       <div
         className={`pointer-events-none absolute -top-24 -right-24 w-48 h-48 rounded-full bg-rose-300/10 blur-3xl transition-opacity duration-500 ${
-          selected
-            ? "opacity-100"
-            : "opacity-0 group-hover:opacity-100"
+          selected ? "opacity-100" : "opacity-0 group-hover:opacity-100"
         }`}
       />
 
       {/* Top accent line */}
       <div
         className={`absolute top-0 left-5 right-5 h-px bg-gradient-to-r from-transparent via-rose-300/60 to-transparent transition-opacity duration-300 ${
-          selected
-            ? "opacity-100"
-            : "opacity-0 group-hover:opacity-100"
+          selected ? "opacity-100" : "opacity-0 group-hover:opacity-100"
         }`}
       />
 
