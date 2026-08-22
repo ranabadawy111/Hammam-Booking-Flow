@@ -2,7 +2,10 @@
 
 A marketing + booking site for a fictional boutique hammam (bathhouse), built as a portfolio piece to show a distinctive visual identity, entrance/scroll animations, and a real multi-step booking flow wired to a stateful data layer.
 
-**[Live demo →](#)** _(add your Vercel/Netlify link here after deploying)_
+
+## 🚀 Live Demo
+
+[Live Demo →](https://hammam-booking-flow.vercel.app)
 
 ## What it does
 
